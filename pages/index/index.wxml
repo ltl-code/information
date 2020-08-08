@@ -1,0 +1,79 @@
+<view class="content">
+	<view class="UCenter-bg">
+		<view class="userinfo">
+			<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+			<block wx:else>
+				<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			</block>
+		</view>
+	</view>
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-people lg "></text>
+				<text class="text-lg">姓名：</text>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-edit lg text-gray"></text>
+				<text class="text-lg">学号：</text>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-friendfill lg text-gray"></text>
+				<text class="text-lg">班级：</text>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-form lg text-gray"></text>
+				<text class="text-lg">身份证号：</text>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-rank lg text-gray"></text>
+				<text class="text-lg">信用值：</text>
+			</view>
+		</view>
+
+		<view class="cu-item">
+			<view class="content">
+				<text class="cuIcon-moneybag lg text-gray"></text>
+				<text class="text-lg">保证金：</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-location lg text-gray"></text>
+				<text class="text-lg">地址管理</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-recharge lg text-gray"></text>
+				<text class="text-lg">账单</text>
+			</view>
+		</view>
+
+		<view class="cu-item arrow">
+			<view class="content">
+				<text class="cuIcon-service lg text-gray"></text>
+				<text class="text-lg">我的客服</text>
+			</view>
+		</view>
+	</view>
+
+
+
+
+
+</view>
